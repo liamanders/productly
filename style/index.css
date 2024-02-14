@@ -1,1 +1,307 @@
+:root {
+  --clr-primary-400: #ffc061;
+  --clr-primary-500: #FF9900;
+
+  --clr-outline-200: #929292;
+}
+
+
+main {
+  max-width: 1536px;
+  margin: 0 auto;
+  padding-top: 60px;
+  
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1536px;
+  max-height: 3rem;
+  margin: 3rem auto;
+  position: sticky;
+  top: 2rem;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+
+  /* Not working? */
+  & a:hover {
+    transform: scale(1.5);
+  }
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-nav__list {
+  display: flex;
+  gap: 2rem;
+  font-size: 19px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+  & a:hover {
+    color: var(--clr-primary-400);
+  }
+}
+
+.btn-box {
+  display: flex;
+  gap: 1rem;
+  width: 250px;
+  height: 50px;
+}
+
+button[variant="primary"] {
+  width: 200px;
+  height: 59.651px;
+  border-radius: 6px;
+  border-color: transparent;
+  background-color: var(--clr-primary-500);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+
+  &:hover {
+    background-color: var(--clr-primary-400);
+  }
+}
+
+h1, h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+}
+
+h2 {
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  
+}
+
+.head-info {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: bold;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 23px;
+}
+
+.fa-solid {
+  padding-right: 1rem;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  padding-top: 20px;
+}
+
+button[variant="outline"] {
+  width: 200px;
+  height: 59.651px;
+  border-radius: 6px;
+  background-color: transparent;
+  border: 1px solid var(--clr-outline-200);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+
+  &:hover {
+    background-color: var(--clr-primary-500);
+    color: white;
+    border: none;
+  }
+}
+
+
+.container {
+
+  display: flexbox;
+  justify-content: center;
+  padding-bottom: 200px;
+  
+}
+
+.card-container{
+  height: 50vh;
+  display: flexbox;
+  justify-content: center;
+  padding-bottom: 40rem;
+}
+
+
+.btn-container {
+  padding-top: 50px;
+  
+}
+
+button[variant="get-started"] {
+  width: 200px;
+  height: 59.651px;
+  border-radius: 6px;
+  border-color: transparent;
+  background-color: var(--clr-primary-500);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+
+  &:hover {
+    background-color: var(--clr-primary-400);
+    
+  }
+}
+
+
+button[variant="btn-watch"] {
+  
+  width: 200px;
+  height: 59.651px;
+
+  border: none;
+  
+  background-color: transparent;
+  color: var(--clr-primary-500);
+  text-align: center;
+  font-size: 19px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 24px;
+  
+  & a:hover {
+    transform: scale(1.2);
+    /* No idea why this isn't working*/
+  }
+}
+
+.container-left {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 200px;
+  
+}
+.img-left {
+  float: left;
+  transform: translateX(-40%);
+  image-resolution: 542 609;
+}
+.main-info {
+  max-width: 35%;
+  font-size: 21px;
+}
+
+.fa-square-check {
+  color: var(--clr-primary-500);
+}
+
+.main-info-right {
+  max-width: 35%;
+  transform: translateX(40%);
+  font-size: 21px;
+}
+
+.card-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#cards-title {
+  width: 30%;
+  text-align: center;
+  margin-left: 32%;
+  
+}
+
+.card {
+  max-width: 20%;
+  text-wrap: wrap;
+  padding: 20px 0;
+  margin: 10px;
+}
+.card-icon {
+  padding-bottom: 25px;
+  margin: 0 auto;
+}
+
+.btn-signupnow {
+  margin-left: 43%;
+}
+
+
+.img-right {
+  float: right;
+  display: flex;
+  image-resolution: 542 609;
+}
+
+.footer-line {
+  border-top: 1px solid var(--clr-outline-200);
+  padding-bottom: 3rem;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1536px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+
+.footer-logo {
+  display: flex;
+  align-self: self-start;
+  margin-bottom: 16px;
+  margin-top: -45px;
+  
+  /* Not working? */
+  & a:hover {
+    transform: scale(1.5);
+  }
+  
+}
+
+.footer-nav {
+  font-size: 1.2rem;
+  
+  & a:hover {
+    color: var(--clr-primary-500);
+  }
+}
+
+
+.footer-email {
+  display: flex;
+  flex-direction: column;
+  
+  
+  & input {
+    padding: 0.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+}
 
